@@ -27,7 +27,7 @@
 
 Пишу манифест Deployment приложения, состоящего из двух контейнеров — nginx и multitool. Поскольку у меня запущен Ingress с nginx в поде `nginx-ingress-microk8s-controller-tdkdf`, то порты 80, 443 будут заняты. В случае, если эти порты заняты, то запуск multitool потребует указания альтернативного порта. Для этого в манифест Deployment добавляю переменную с указанием порта 1180.
 
-Ссылка на манифест Deployment - https://github.com/DemoniumBlack/fedorchukds-devops-33-38/blob/main/SRC/deployment.yaml
+Ссылка на манифест Deployment - https://github.com/RikLedger/12-Kubernetes-03-hw/blob/main/SRC%20/deployment.yaml
 
 Запускаю Deployment:
 
@@ -55,7 +55,7 @@
 
 ![img_7](IMG/img_7.png)
 
-Ссылка на манифест Service - https://github.com/DemoniumBlack/fedorchukds-devops-33-38/blob/main/SRC/service.yaml
+Ссылка на манифест Service - https://github.com/RikLedger/12-Kubernetes-03-hw/blob/main/SRC%20/service.yaml
 
 Проверяю сервисы в namespace netology:
 
@@ -67,7 +67,7 @@
 
 ![img_9](IMG/img_9.png)
 
-Ссылка на манифест с подом multitool - https://github.com/DemoniumBlack/fedorchukds-devops-33-38/blob/main/SRC/multitool.yaml
+Ссылка на манифест с подом multitool - https://github.com/RikLedger/12-Kubernetes-03-hw/blob/main/SRC%20/multitool.yaml
 
 Проверяю поды в namespace netology:
 
@@ -99,7 +99,7 @@ Deployment создан, проверю запущен ли под:
 
 Вижу, что под не запущен и находится в состоянии `Init:0/1`.
 
-Ссылка на манифест Deployment - https://github.com/DemoniumBlack/fedorchukds-devops-33-38/blob/main/SRC/nginx-init-deploy.yaml
+Ссылка на манифест Deployment - https://github.com/RikLedger/12-Kubernetes-03-hw/blob/main/SRC%20/nginx-init-deploy.yaml
 
 3 - 4. Создаю манифест Service, применяю его и проверю запустился ли под nginx:
 
@@ -107,4 +107,4 @@ Deployment создан, проверю запущен ли под:
 
 После запуска сервиса, запустился под с nginx.
 
-Ссылка на манифест Service - https://github.com/DemoniumBlack/fedorchukds-devops-33-38/blob/main/SRC/nginx-init-svc.yaml
+Ссылка на манифест Service - https://github.com/RikLedger/12-Kubernetes-03-hw/blob/main/SRC%20/nginx-init-svc.yaml
